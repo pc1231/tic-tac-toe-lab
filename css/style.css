@@ -1,21 +1,65 @@
 body {
-    background-color: gainsboro;
-    /* Use a system font, if none are available use an available sans-sarif */
-    font-family: system-ui, sans-serif;
-    margin: 0;
-  }
-  
-  .board {
-    display: flex;
-    flex-wrap: wrap;
-    width: 325px;
-  }
-  
-  .sqr {
-    width: 30%;
-    aspect-ratio: 1/1;
-    border: 3px solid black;
-    font-size: 64px;
-    text-align: center;
-  }
-  
+  background-color: gainsboro;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><text y="50%" font-size="50">🐺</text><text x="50%" y="50%" font-size="50">🐶</text><text y="100%" font-size="50">🐺</text><text x="50%" y="100%" font-size="50">🐶</text></svg>');
+  background-size: 100px 100px;
+  background-repeat: repeat;
+  background-position: center;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.sqr {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 3px solid black;
+  font-size: 64px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#reset {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #6faf4c;
+  color: white;
+  border-radius: 5px;
+}
+
+#reset:hover {
+  background-color: #45a049;
+}
+
